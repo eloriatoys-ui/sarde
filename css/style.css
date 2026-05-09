@@ -1393,6 +1393,30 @@ footer > * { position: relative; z-index: 1; }
   gap: 1.4rem 1.2rem;
   list-style: none;
 }
+/* Mobile: always show 2 cards per row */
+@media (max-width: 640px) {
+  .menu-list {
+    grid-template-columns: 1fr 1fr;
+    gap: .75rem;
+  }
+  .menu-item .body {
+    padding: .65rem .7rem .85rem;
+    gap: .35rem;
+  }
+  .menu-item .name {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .menu-item .price {
+    font-size: 12px;
+  }
+  .menu-item .price small { font-size: 9px; }
+  .menu-item .pill {
+    font-size: 8px;
+    padding: 3px 6px;
+    letter-spacing: .18em;
+  }
+}
 
 .menu-item {
   display: flex;
