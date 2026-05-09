@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1B1714" />
+<title>Sarde — Syrian &amp; Lebanese Restaurant, Dubai</title>
+<meta name="description" content="Sarde Restaurant — Syrian &amp; Lebanese cuisine in Barsha Heights, Dubai. Charcoal-grilled meats, hand-rolled mezze, slow-burning shisha and timeless Levantine hospitality." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500..800;1,500..800&family=Manrope:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ================== Announcement bar ================== -->
+<div class="announcement" aria-label="Announcements">
+  <div class="announcement-track">
+    <span>Open daily <b>12:00 PM — 2:00 AM</b> &nbsp;·&nbsp; Barsha Heights, Dubai &nbsp;·&nbsp; Reservations <b>+971 4 554 0528</b> &nbsp;·&nbsp; Charcoal grill since MMXIX &nbsp;·&nbsp; Now serving the new Sarde Crepe &nbsp;·&nbsp;</span>
+    <span aria-hidden="true">Open daily <b>12:00 PM — 2:00 AM</b> &nbsp;·&nbsp; Barsha Heights, Dubai &nbsp;·&nbsp; Reservations <b>+971 4 554 0528</b> &nbsp;·&nbsp; Charcoal grill since MMXIX &nbsp;·&nbsp; Now serving the new Sarde Crepe &nbsp;·&nbsp;</span>
+  </div>
+</div>
+
+<!-- ================== Navigation ================== -->
+<nav class="nav" id="nav" aria-label="Primary">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Sarde, home">
+      <img src="assets/sarde-logo.png" alt="Sarde Restaurant" />
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="#signatures" data-i18n="nav.signatures">Signatures</a></li>
+      <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+      <li><a href="#visit" data-i18n="nav.visit">Visit</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button data-lang="en" class="active" aria-pressed="true">EN</button>
+        <button data-lang="ar" aria-pressed="false">عربي</button>
+        <button data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a href="https://wa.me/971585695404" class="btn btn-primary" target="_blank" rel="noopener">
+        <span data-i18n="nav.reserve">Reserve</span> <span class="arrow">→</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <ul>
+    <li><a href="#about"><span class="num">01</span>About</a></li>
+    <li><a href="menu.html"><span class="num">02</span>The <em>Menu</em></a></li>
+    <li><a href="#signatures"><span class="num">03</span>Signatures</a></li>
+    <li><a href="#gallery"><span class="num">04</span>Gallery</a></li>
+    <li><a href="#visit"><span class="num">05</span>Visit</a></li>
+  </ul>
+  <div class="footer">
+    <span>+971 4 554 0528</span>
+    <span>Barsha Heights · Dubai</span>
+    <span>@sarde_restaurant</span>
+  </div>
+</div>
+
+<!-- ================== HERO ================== -->
+<header class="hero" id="top">
+  <div class="hero-text">
+    <div>
+      <div class="hero-eyebrow">
+        <span class="line" aria-hidden="true"></span>
+        <span class="kicker">Syrian &amp; Lebanese · Est. MMXIX</span>
+        <span class="arabic" aria-hidden="true">سردة</span>
+      </div>
+
+      <h1 class="display" data-reveal>
+        A Syrian &amp; Lebanese table.<br />
+        <em>In the heart of Dubai.</em>
+      </h1>
+    </div>
+
+    <div>
+      <div class="hero-bottom">
+        <p class="hero-blurb" data-reveal data-reveal-delay="2">
+          Charcoal-grilled meats, hand-rolled mezze, slow-burning shisha and
+          the unhurried rhythm of a Damascus and Beirut afternoon — gathered
+          around one warm table in Barsha Heights.
+        </p>
+
+        <div class="hero-actions" data-reveal data-reveal-delay="3">
+          <a href="menu.html" class="btn btn-ink">View Full Menu <span class="arrow">→</span></a>
+          <a href="https://wa.me/971585695404?text=Hello%20Sarde%2C%20I%27d%20like%20to%20place%20an%20order" class="btn btn-primary" target="_blank" rel="noopener">Reserve a Table</a>
+        </div>
+      </div>
+
+      <div class="order-row" data-reveal data-reveal-delay="4">
+        <span class="order-label">Order direct →</span>
+
+        <a class="order-pill whatsapp" href="https://wa.me/971585695404?text=Hello%20Sarde%2C%20I%27d%20like%20to%20place%20an%20order" target="_blank" rel="noopener" aria-label="Order via WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+
+        <a class="order-pill talabat" href="https://www.talabat.com/uae/restaurant" target="_blank" rel="noopener" aria-label="Order via Talabat">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          Talabat
+        </a>
+
+        <a class="order-pill noon" href="https://food.noon.com/" target="_blank" rel="noopener" aria-label="Order via Noon Food">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+          Noon Food
+        </a>
+      </div>
+
+      <div class="hero-meta-row" data-reveal data-reveal-delay="5">
+        <span><b>Syrian</b> &amp; <b>Lebanese</b></span>
+        <span><b>27</b> Charcoal mains</span>
+        <span><b>15</b> Mezze</span>
+        <span><b>20+</b> Shisha blends</span>
+        <span style="margin-left:auto"><b>★ 4.8</b> · Google Reviews</span>
+      </div>
+    </div>
+  </div>
+
+  <figure class="hero-image">
+    <span class="hero-corner-tag">Syrian &amp; Lebanese · Since MMXIX</span>
+    <img
+      data-image="hero/main"
+      src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80"
+      alt="A spread of Lebanese mezze, hummus, fresh bread and grilled meats" />
+
+    <div class="hero-stamp" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <defs>
+          <path id="circle" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
+        </defs>
+        <text font-family="Manrope" font-size="11" letter-spacing="6" fill="#F2EADC">
+          <textPath href="#circle">SARDE  ·  CHARCOAL  ·  MEZZE  ·  SHISHA  ·  DUBAI  ·  </textPath>
+        </text>
+      </svg>
+      <span class="ar">س</span>
+    </div>
+  </figure>
+</header>
+
+<!-- ================== Marquee ================== -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Shish Tawook <span class="dot"></span> Hummus Beiruti <span class="dot"></span> Damascene Kabab <span class="dot"></span> Manakish Za'atar <span class="dot"></span> Shaqaf Tikka <span class="dot"></span> Aleppo Kebab <span class="dot"></span> Lamb Chops <span class="dot"></span> Kunafa Nabulsiya <span class="dot"></span> Mixed Grill <span class="dot"></span></span>
+    <span>Shish Tawook <span class="dot"></span> Hummus Beiruti <span class="dot"></span> Damascene Kabab <span class="dot"></span> Manakish Za'atar <span class="dot"></span> Shaqaf Tikka <span class="dot"></span> Aleppo Kebab <span class="dot"></span> Lamb Chops <span class="dot"></span> Kunafa Nabulsiya <span class="dot"></span> Mixed Grill <span class="dot"></span></span>
+  </div>
+</section>
+
+<!-- ================== Ornament divider ================== -->
+<div class="ornament" aria-hidden="true">
+  <div class="ornament-center">
+    <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1">
+      <rect x="14" y="14" width="32" height="32"/>
+      <rect x="14" y="14" width="32" height="32" transform="rotate(45 30 30)"/>
+      <circle cx="30" cy="30" r="3" fill="currentColor"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ================== About ================== -->
+<section id="about" class="about section bg-pattern-soft">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images" data-reveal data-image-section="about">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=80"
+               alt="Warm restaurant interior with hanging lights" />
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1542114740389-9b46fb1e5be7?auto=format&fit=crop&w=900&q=80"
+               alt="Plate of hummus with olive oil and pine nuts" />
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1591299177061-2151e53fcaea?auto=format&fit=crop&w=900&q=80"
+               alt="Shisha with smoke trailing in dim light" />
+        </figure>
+      </div>
+
+      <div class="about-text">
+        <span class="kicker" data-reveal>— Syrian &amp; Lebanese, on the House</span>
+        <h2 data-reveal data-reveal-delay="1">
+          Damascus &amp; Beirut, <em>set in Dubai.</em>
+        </h2>
+        <p class="lead" data-reveal data-reveal-delay="2">
+          Sarde is a love letter to the Syrian and Lebanese table — slow,
+          generous, and set for everyone who pulls up a chair.
+        </p>
+        <p data-reveal data-reveal-delay="3">
+          From the smoky perfume of charcoal-kissed kebabs and the velvet
+          hush of fresh tahini, to the morning ritual of fatteh and Moroccan
+          coffee — we cook the food we grew up with in Damascus and Beirut,
+          the way our grandmothers would still recognise it.
+        </p>
+        <p data-reveal data-reveal-delay="4">
+          Days here begin with za'atar pulled from the saj and end with
+          kunafa under a lit shisha. In between: laughter, long conversations,
+          and a table that never quite empties.
+        </p>
+
+        <ul class="hallmarks" data-reveal data-reveal-delay="5">
+          <li>
+            <span class="num">100%</span>
+            <span class="lbl">Charcoal grilled</span>
+          </li>
+          <li>
+            <span class="num">Daily</span>
+            <span class="lbl">Bread from the saj</span>
+          </li>
+          <li>
+            <span class="num">12 — 2</span>
+            <span class="lbl">Hours, every day</span>
+          </li>
+          <li>
+            <span class="num">21+</span>
+            <span class="lbl">Shisha blends</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== Marquee 2 — Arabic accent ================== -->
+<section class="marquee" aria-hidden="true" style="background:var(--cream-shade); border-color:var(--terracotta);">
+  <div class="marquee-track" style="animation-direction: reverse; color: var(--ink);">
+    <span style="color:var(--ink);">أهلا وسهلا <span class="dot"></span> Welcome <span class="dot"></span> Bienvenue <span class="dot"></span> Hoş geldiniz <span class="dot"></span> ahlan wa sahlan <span class="dot"></span> أهلا وسهلا <span class="dot"></span></span>
+    <span style="color:var(--ink);">أهلا وسهلا <span class="dot"></span> Welcome <span class="dot"></span> Bienvenue <span class="dot"></span> Hoş geldiniz <span class="dot"></span> ahlan wa sahlan <span class="dot"></span> أهلا وسهلا <span class="dot"></span></span>
+  </div>
+</section>
+
+<!-- ================== Signatures ================== -->
+<section id="signatures" class="signatures section">
+  <div class="container-wide">
+    <div class="section-head" data-reveal>
+      <div class="num-block">
+        <span class="section-num">02 — The House</span>
+      </div>
+      <h2>Signatures of <em>the kitchen.</em></h2>
+      <div class="head-meta">
+        Six dishes the regulars<br />come back for.
+      </div>
+    </div>
+
+    <div class="dish-grid" data-image-section="signatures">
+      <article class="dish" data-reveal>
+        <div class="dish-image">
+          <span class="dish-tag">Charcoal · Mains</span>
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=900&q=80"
+               alt="Mixed grill platter on a bed of saffron rice" />
+        </div>
+        <div class="dish-info">
+          <h3>Mixed Grill</h3>
+          <span class="price">67 <small>AED</small></span>
+        </div>
+        <p class="dish-desc">Kabab, shish tawook, lamb cubes & kofta — all from the live charcoal.</p>
+      </article>
+
+      <article class="dish" data-reveal data-reveal-delay="1">
+        <div class="dish-image">
+          <span class="dish-tag">Pizza · Pastries</span>
+          <img src="https://images.unsplash.com/photo-1601000938259-9e92002320b2?auto=format&fit=crop&w=900&q=80"
+               alt="Wood-fired Lebanese flatbread with za'atar" />
+        </div>
+        <div class="dish-info">
+          <h3>The Sarde Special</h3>
+          <span class="price">50 <small>AED</small></span>
+        </div>
+        <p class="dish-desc">Our flagship pie — kashkaval, muhammara, slow-cured beef.</p>
+      </article>
+
+      <article class="dish" data-reveal data-reveal-delay="2">
+        <div class="dish-image">
+          <span class="dish-tag">Charcoal</span>
+          <img src="https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?auto=format&fit=crop&w=900&q=80"
+               alt="Lamb chops grilled over charcoal" />
+        </div>
+        <div class="dish-info">
+          <h3>Lamb Chops</h3>
+          <span class="price">79 <small>AED</small></span>
+        </div>
+        <p class="dish-desc">Frenched & seasoned simply — let the smoke do the talking.</p>
+      </article>
+
+      <article class="dish" data-reveal>
+        <div class="dish-image">
+          <span class="dish-tag">Mezze</span>
+          <img src="https://images.unsplash.com/photo-1542114740389-9b46fb1e5be7?auto=format&fit=crop&w=900&q=80"
+               alt="A bowl of hummus dressed with olive oil" />
+        </div>
+        <div class="dish-info">
+          <h3>Hummus with Meat</h3>
+          <span class="price">34 <small>AED</small></span>
+        </div>
+        <p class="dish-desc">Stone-ground tahini, lamb, pine nuts, warm bread on the side.</p>
+      </article>
+
+      <article class="dish" data-reveal data-reveal-delay="1">
+        <div class="dish-image">
+          <span class="dish-tag">Salads</span>
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=900&q=80"
+               alt="Fattoush with sumac and toasted bread" />
+        </div>
+        <div class="dish-info">
+          <h3>The Sarde Salad</h3>
+          <span class="price">45 <small>AED</small></span>
+        </div>
+        <p class="dish-desc">Pomegranate, mountain herbs, sumac, our house dressing.</p>
+      </article>
+
+      <article class="dish" data-reveal data-reveal-delay="2">
+        <div class="dish-image">
+          <span class="dish-tag">Sweet</span>
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80"
+               alt="Crepe with chocolate, fruit and ice cream" />
+        </div>
+        <div class="dish-info">
+          <h3>Crepe Sarde</h3>
+          <span class="price">55 <small>AED</small></span>
+        </div>
+        <p class="dish-desc">Our late-night ritual — chocolate, banana, kunafa, vanilla cream.</p>
+      </article>
+    </div>
+
+    <div class="signatures-cta">
+      <a href="menu.html" class="btn btn-ghost-dark">View the full menu <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================== Pull-quote ================== -->
+<section class="quote-section">
+  <div class="quote-inner">
+    <blockquote data-reveal>
+      “We don't cook to impress. We cook to <em>gather.</em> A long table,
+      hot bread, the right people — that's the whole secret.”
+    </blockquote>
+    <cite data-reveal data-reveal-delay="2">— The Sarde Kitchen</cite>
+  </div>
+</section>
+
+<!-- ================== Ornament ================== -->
+<div class="ornament" aria-hidden="true" style="background-color: var(--cream);">
+  <div class="ornament-center">
+    <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1">
+      <rect x="14" y="14" width="32" height="32"/>
+      <rect x="14" y="14" width="32" height="32" transform="rotate(45 30 30)"/>
+      <circle cx="30" cy="30" r="3" fill="currentColor"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ================== Gallery ================== -->
+<section id="gallery" class="gallery section">
+  <div class="container-wide">
+    <div class="section-head" data-reveal>
+      <div class="num-block">
+        <span class="section-num">03 — The Room</span>
+      </div>
+      <h2>The <em>scenes</em> of Sarde.</h2>
+      <div class="head-meta">
+        From the saj to the<br />last shisha of the night.
+      </div>
+    </div>
+
+    <div class="gallery-grid" data-image-section="gallery">
+      <a href="#" class="gallery-item g-1" data-reveal>
+        <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?auto=format&fit=crop&w=1200&q=80" alt="Lebanese flatbread coming off the saj" />
+        <span class="lbl">From the saj</span>
+      </a>
+      <a href="#" class="gallery-item g-2" data-reveal data-reveal-delay="1">
+        <img src="https://images.unsplash.com/photo-1591299177061-2151e53fcaea?auto=format&fit=crop&w=900&q=80" alt="Shisha smoke" />
+        <span class="lbl">Shisha · slow burn</span>
+      </a>
+      <a href="#" class="gallery-item g-3" data-reveal data-reveal-delay="2">
+        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=900&q=80" alt="Restaurant interior" />
+        <span class="lbl">The Room</span>
+      </a>
+      <a href="#" class="gallery-item g-4" data-reveal>
+        <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75?auto=format&fit=crop&w=900&q=80" alt="Shawarma" />
+        <span class="lbl">Shawarma</span>
+      </a>
+      <a href="#" class="gallery-item g-5" data-reveal data-reveal-delay="1">
+        <img src="https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?auto=format&fit=crop&w=1200&q=80" alt="Lamb chops on the grill" />
+        <span class="lbl">Charcoal · live fire</span>
+      </a>
+      <a href="#" class="gallery-item g-6" data-reveal data-reveal-delay="2">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Coffee on the bar" />
+        <span class="lbl">Moroccan coffee</span>
+      </a>
+      <a href="#" class="gallery-item g-7" data-reveal data-reveal-delay="3">
+        <img src="https://images.unsplash.com/photo-1601314002592-b8734bca6604?auto=format&fit=crop&w=900&q=80" alt="Falafel" />
+        <span class="lbl">Falafel · golden</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================== Visit / Contact ================== -->
+<section id="visit" class="contact section bg-pattern-soft">
+  <div class="container-wide">
+    <div class="section-head" data-reveal>
+      <div class="num-block">
+        <span class="section-num">04 — Visit</span>
+      </div>
+      <h2>Find your <em>seat.</em></h2>
+      <div class="head-meta">
+        Walk-ins welcome.<br />Reservations adored.
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <dl class="contact-block">
+          <div>
+            <dt>Address</dt>
+            <dd>Barsha Heights<br />Dubai, UAE</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Daily<br />12:00 — 02:00</dd>
+            <p class="small">Kitchen open until last order.</p>
+          </div>
+        </dl>
+
+        <dl class="contact-block">
+          <div>
+            <dt>Reservations</dt>
+            <dd><a href="tel:+97145540528">+971 4 554 0528</a></dd>
+          </div>
+          <div>
+            <dt>WhatsApp & Delivery</dt>
+            <dd><a href="https://wa.me/971585695404" target="_blank" rel="noopener">+971 58 569 5404</a></dd>
+          </div>
+        </dl>
+
+        <dl class="contact-block">
+          <div>
+            <dt>Follow</dt>
+            <dd>
+              <a href="https://instagram.com/sarde_restaurant" target="_blank" rel="noopener">Instagram</a><br/>
+              <a href="https://facebook.com/sarde.restaurant" target="_blank" rel="noopener" style="font-size:18px">Facebook</a><br/>
+              <a href="https://tiktok.com/@sarde_restaurant" target="_blank" rel="noopener" style="font-size:18px">TikTok</a>
+            </dd>
+          </div>
+          <div>
+            <dt>Tag us</dt>
+            <dd><span class="arabic" style="font-size:30px;">#سردة</span><br/><span style="font-size:18px;">#sarde_restaurant</span></dd>
+          </div>
+        </dl>
+
+        <div class="contact-cta">
+          <a href="https://wa.me/971585695404" class="btn btn-primary" target="_blank" rel="noopener">Reserve via WhatsApp <span class="arrow">→</span></a>
+          <a href="tel:+97145540528" class="btn btn-ghost-dark">Call us</a>
+        </div>
+      </div>
+
+      <div class="contact-map" data-reveal data-reveal-delay="2">
+        <span class="stamp">31°06'12"N · 55°10'48"E</span>
+        <iframe
+          src="https://www.google.com/maps?q=Barsha+Heights+Dubai&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Sarde Restaurant location — Barsha Heights, Dubai">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== Footer ================== -->
+<footer>
+  <div class="container-wide">
+    <div class="footer-display" aria-hidden="true">SARD<em>E</em></div>
+
+    <div class="footer-grid">
+      <div>
+        <h4>The House</h4>
+        <p class="lead">A Syrian &amp; Lebanese table set for everyone who pulls up a chair — in Barsha Heights, every day.</p>
+        <p><span class="arabic" style="font-size:22px; color:var(--brass-light);">المطبخ السوري واللبناني</span></p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Barsha Heights<br>Dubai, UAE</p>
+        <p>Daily 12:00 — 02:00</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+97145540528">+971 4 554 0528</a>
+        <a href="https://wa.me/971585695404" target="_blank" rel="noopener">+971 58 569 5404 · WA</a>
+        <a href="mailto:hello@sarde.ae">hello@sarde.ae</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="https://instagram.com/sarde_restaurant" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/sarde.restaurant" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://tiktok.com/@sarde_restaurant" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© MMXXVI Sarde Restaurant · All rights reserved</span>
+      <span>Crafted with charcoal & care · Dubai</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home-loader.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sarde Admin</title>
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500..800;1,500..800&family=Manrope:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/admin.css" />
+</head>
+<body class="admin-body">
+
+<!-- ============ LOGIN SCREEN ============ -->
+<div class="login-shell" id="loginShell">
+  <form class="login-card" id="loginForm" autocomplete="on">
+    <div class="logo">Sard<em>e</em></div>
+    <div class="sub">Admin · Sign in</div>
+
+    <div class="err" id="loginErr"></div>
+
+    <div class="field">
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" name="email" type="email" required autocomplete="username" />
+    </div>
+    <div class="field">
+      <label for="loginPassword">Password</label>
+      <input id="loginPassword" name="password" type="password" required autocomplete="current-password" />
+    </div>
+    <button type="submit">Sign in →</button>
+
+    <p style="margin-top:1.5rem;font-size:12px;color:var(--ink-mute);line-height:1.5;">
+      Forgot the password? Reset it from the Supabase dashboard under <i>Authentication → Users</i>.
+    </p>
+  </form>
+</div>
+
+<!-- ============ ADMIN PANEL ============ -->
+<div class="admin-shell" id="adminShell" style="display:none;">
+
+  <!-- Sidebar: categories -->
+  <aside class="admin-side">
+    <a href="index.html" class="logo">Sard<em>e</em></a>
+    <div class="role">Admin · Menu</div>
+    <div class="user" id="userEmail">—</div>
+
+    <div class="view-switcher" style="display:flex;gap:4px;background:rgba(242,234,220,.06);padding:3px;border-radius:6px;margin-bottom:.75rem;">
+      <button id="viewMenuBtn" class="active" style="flex:1;padding:7px 10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;border-radius:4px;background:var(--terracotta);color:var(--cream);border:0;cursor:pointer;">Menu</button>
+      <button id="viewImagesBtn" style="flex:1;padding:7px 10px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;border-radius:4px;background:transparent;color:var(--cream);border:0;cursor:pointer;">Home images</button>
+    </div>
+
+    <button class="btn-admin small" id="addCategoryBtn">+ New category</button>
+
+    <div class="cat-list" id="catList"></div>
+
+    <div class="footer-actions">
+      <button id="seedBtn">Import default menu</button>
+      <a href="index.html" target="_blank">View site ↗</a>
+      <button id="logoutBtn">Sign out</button>
+    </div>
+  </aside>
+
+  <!-- Main: items in selected category -->
+  <main class="admin-main">
+    <div class="admin-toolbar">
+      <h1 id="catTitle">Welcome <em>back.</em><span class="small" id="catSubtitle">Pick a category</span></h1>
+      <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+        <button class="btn-admin ghost" id="editCatBtn" disabled>Edit category</button>
+        <button class="btn-admin danger" id="deleteCatBtn" disabled>Delete category</button>
+        <button class="btn-admin" id="addItemBtn" disabled>+ Add dish</button>
+      </div>
+    </div>
+
+    <div id="itemsArea">
+      <div class="empty-state">
+        <h3>Nothing selected.</h3>
+        <p>Pick a category from the sidebar — or add a new one.</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ============ MODAL: CATEGORY ============ -->
+<div class="modal-backdrop" id="catModal">
+  <div class="modal">
+    <button class="close" data-close>×</button>
+    <h2 id="catModalTitle">New <em>category</em></h2>
+
+    <form id="catForm">
+      <input type="hidden" name="id" />
+
+      <div class="lang-tabs">
+        <button type="button" class="active" data-lang="en">EN</button>
+        <button type="button" data-lang="ar">عربي</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+
+      <div class="lang-pane active" data-pane="en">
+        <div class="field">
+          <label>Name (English)</label>
+          <input name="name_en" type="text" required />
+        </div>
+        <div class="field">
+          <label>Description (English)</label>
+          <textarea name="desc_en"></textarea>
+        </div>
+      </div>
+      <div class="lang-pane" data-pane="ar">
+        <div class="field">
+          <label>الاسم (عربي)</label>
+          <input name="name_ar" type="text" dir="rtl" />
+        </div>
+        <div class="field">
+          <label>الوصف</label>
+          <textarea name="desc_ar" dir="rtl"></textarea>
+        </div>
+      </div>
+      <div class="lang-pane" data-pane="ru">
+        <div class="field">
+          <label>Название (Русский)</label>
+          <input name="name_ru" type="text" />
+        </div>
+        <div class="field">
+          <label>Описание</label>
+          <textarea name="desc_ru"></textarea>
+        </div>
+      </div>
+
+      <div class="form-grid" style="margin-top:1rem;">
+        <div class="field">
+          <label>Slug (URL key)</label>
+          <input name="slug" type="text" required pattern="[a-z0-9-]+" />
+        </div>
+        <div class="field">
+          <label>Sort order</label>
+          <input name="sort_order" type="number" value="0" />
+        </div>
+
+        <div class="field full">
+          <label>Banner image</label>
+          <div class="upload-zone" data-upload="banner_image_url">
+            <div class="preview"><img alt="" /></div>
+            <div class="info">
+              <b>Drop or click to upload</b>
+              JPG / PNG / WebP, recommended 1600 × 600.<br>
+              <input name="banner_image_url" type="hidden" />
+              <button type="button" class="btn-admin small ghost" data-pickfile>Choose file</button>
+              <input type="file" accept="image/*" />
+            </div>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label style="display:flex;align-items:center;gap:.5rem;">
+            <input type="checkbox" name="is_active" checked /> Active (visible to customers)
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-admin ghost" data-close>Cancel</button>
+        <button type="submit" class="btn-admin">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ MODAL: ITEM ============ -->
+<div class="modal-backdrop" id="itemModal">
+  <div class="modal">
+    <button class="close" data-close>×</button>
+    <h2 id="itemModalTitle">New <em>dish</em></h2>
+
+    <form id="itemForm">
+      <input type="hidden" name="id" />
+      <input type="hidden" name="category_id" />
+
+      <div class="lang-tabs">
+        <button type="button" class="active" data-lang="en">EN</button>
+        <button type="button" data-lang="ar">عربي</button>
+        <button type="button" data-lang="ru">RU</button>
+      </div>
+
+      <div class="lang-pane active" data-pane="en">
+        <div class="field"><label>Name (English)</label><input name="name_en" required /></div>
+      </div>
+      <div class="lang-pane" data-pane="ar">
+        <div class="field"><label>الاسم (عربي)</label><input name="name_ar" dir="rtl" /></div>
+      </div>
+      <div class="lang-pane" data-pane="ru">
+        <div class="field"><label>Название (Русский)</label><input name="name_ru" /></div>
+      </div>
+
+      <div class="form-grid" style="margin-top:1rem;">
+        <div class="field">
+          <label>Price (AED)</label>
+          <input name="price_aed" type="number" step="0.01" required />
+        </div>
+        <div class="field">
+          <label>Badge (optional)</label>
+          <select name="badge">
+            <option value="">— None —</option>
+            <option value="signature">Signature</option>
+            <option value="premium">Premium</option>
+            <option value="family">Family</option>
+            <option value="for_two">For Two</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Sort order</label>
+          <input name="sort_order" type="number" value="0" />
+        </div>
+        <div class="field">
+          <label style="display:flex;align-items:center;gap:.5rem;margin-top:1.6rem;">
+            <input type="checkbox" name="is_active" checked /> Active
+          </label>
+        </div>
+
+        <div class="field full">
+          <label>Dish image</label>
+          <div class="upload-zone" data-upload="image_url">
+            <div class="preview"><img alt="" /></div>
+            <div class="info">
+              <b>Drop or click to upload</b>
+              JPG / PNG / WebP, square or 4:3 ideal.<br>
+              <input name="image_url" type="hidden" />
+              <button type="button" class="btn-admin small ghost" data-pickfile>Choose file</button>
+              <input type="file" accept="image/*" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-admin ghost" data-close>Cancel</button>
+        <button type="submit" class="btn-admin">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/menu-seed.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

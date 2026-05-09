@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1B1714" />
+<title>The Menu — Sarde · Syrian &amp; Lebanese · Dubai</title>
+<meta name="description" content="The full menu at Sarde Restaurant in Barsha Heights, Dubai — Syrian and Lebanese mezze, charcoal mains, sandwiches, breakfast, desserts, juices, hot drinks and shisha." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500..800;1,500..800&family=Manrope:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announcement">
+  <div class="announcement-track">
+    <span>Daily <b>12:00 — 02:00</b> &nbsp;·&nbsp; Barsha Heights · Dubai &nbsp;·&nbsp; Reserve <b>+971 4 554 0528</b> &nbsp;·&nbsp; Order on WhatsApp <b>+971 58 569 5404</b> &nbsp;·&nbsp;</span>
+    <span aria-hidden="true">Daily <b>12:00 — 02:00</b> &nbsp;·&nbsp; Barsha Heights · Dubai &nbsp;·&nbsp; Reserve <b>+971 4 554 0528</b> &nbsp;·&nbsp; Order on WhatsApp <b>+971 58 569 5404</b> &nbsp;·&nbsp;</span>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Sarde Restaurant home">
+      <img src="assets/sarde-logo.png" alt="Sarde Restaurant" />
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="menu.html" class="active" data-i18n="nav.menu">Menu</a></li>
+      <li><a href="index.html#signatures" data-i18n="nav.signatures">Signatures</a></li>
+      <li><a href="index.html#gallery" data-i18n="nav.gallery">Gallery</a></li>
+      <li><a href="index.html#visit" data-i18n="nav.visit">Visit</a></li>
+    </ul>
+    <div class="nav-cta">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button data-lang="en" class="active" aria-pressed="true">EN</button>
+        <button data-lang="ar" aria-pressed="false">عربي</button>
+        <button data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <a href="https://wa.me/971585695404" class="btn btn-primary" target="_blank" rel="noopener"><span data-i18n="nav.reserve">Reserve</span> <span class="arrow">→</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html#about"><span class="num">01</span>About</a></li>
+    <li><a href="menu.html"><span class="num">02</span>The <em>Menu</em></a></li>
+    <li><a href="index.html#signatures"><span class="num">03</span>Signatures</a></li>
+    <li><a href="index.html#gallery"><span class="num">04</span>Gallery</a></li>
+    <li><a href="index.html#visit"><span class="num">05</span>Visit</a></li>
+  </ul>
+  <div class="footer">
+    <span>+971 4 554 0528</span>
+    <span>Barsha Heights · Dubai</span>
+  </div>
+</div>
+
+<!-- Menu hero -->
+<header class="menu-hero">
+  <div class="container">
+    <div class="menu-hero-inner">
+      <div>
+        <span class="kicker" data-reveal>— Syrian &amp; Lebanese cuisine</span>
+        <h1 data-reveal data-reveal-delay="1">
+          A taste of <em>Damascus &amp; Beirut.</em>
+        </h1>
+      </div>
+      <div class="menu-hero-meta" data-reveal data-reveal-delay="2">
+        <div>All prices in <b>AED · د.إ</b></div>
+        <div>VAT &amp; service included</div>
+        <div>Vegan &amp; vegetarian on request</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Sticky tab bar -->
+<div class="menu-tabs" id="menuTabs">
+  <div class="container">
+    <div class="menu-tabs-inner" role="tablist" id="menuTabsInner"></div>
+  </div>
+</div>
+
+<div class="ornament" aria-hidden="true" style="background-color: var(--cream); margin-top: 2rem;">
+  <div class="ornament-center">
+    <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="1">
+      <rect x="14" y="14" width="32" height="32"/>
+      <rect x="14" y="14" width="32" height="32" transform="rotate(45 30 30)"/>
+      <circle cx="30" cy="30" r="3" fill="currentColor"/>
+    </svg>
+  </div>
+</div>
+
+<main class="container">
+
+  <div id="menuRoot"></div>
+
+</main>
+
+<!-- Bottom CTA -->
+<section class="menu-foot-cta">
+  <div class="container">
+    <h3>A table is waiting.</h3>
+    <p>Reserve directly with the host on WhatsApp — most tables are confirmed within minutes.</p>
+    <div class="ctas">
+      <a href="https://wa.me/971585695404" class="btn btn-primary" target="_blank" rel="noopener">Reserve on WhatsApp <span class="arrow">→</span></a>
+      <a href="tel:+97145540528" class="btn btn-ghost">Call +971 4 554 0528</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container-wide">
+    <div class="footer-display">SARD<em>E</em></div>
+    <div class="footer-grid">
+      <div>
+        <h4>The House</h4>
+        <p class="lead">A Syrian &amp; Lebanese table set for everyone who pulls up a chair — in Barsha Heights, every day.</p>
+        <p><span class="arabic" style="font-size:22px; color:var(--brass-light);">المطبخ السوري واللبناني</span></p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Barsha Heights<br>Dubai, UAE</p>
+        <p>Daily 12:00 — 02:00</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+97145540528">+971 4 554 0528</a>
+        <a href="https://wa.me/971585695404" target="_blank" rel="noopener">+971 58 569 5404 · WA</a>
+        <a href="mailto:hello@sarde.ae">hello@sarde.ae</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="https://instagram.com/sarde_restaurant" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/sarde.restaurant" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://tiktok.com/@sarde_restaurant" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© MMXXVI Sarde Restaurant · All rights reserved</span>
+      <span>Crafted with charcoal &amp; care · Dubai</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu-loader.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>
