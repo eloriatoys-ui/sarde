@@ -58,13 +58,9 @@
   root.innerHTML = categories.map((c, idx) => {
     const catItems = items.filter(i => i.category_id === c.id).sort((a,b) => a.sort_order - b.sort_order);
     const num = String(idx + 1).padStart(2, '0');
-    const banner = c.banner_image_url
-      ? `<div class="cat-banner"><img src="${esc(c.banner_image_url)}" loading="lazy" alt="${esc(c.name_en)}" /><span class="label" data-name-en="${esc(c.name_en)}" data-name-ar="${esc(c.name_ar||c.name_en)}" data-name-ru="${esc(c.name_ru||c.name_en)}">${esc(c.name_en)}</span></div>`
-      : '';
 
     return `
       <section id="${esc(c.slug)}" class="menu-section">
-        ${banner}
         <header class="menu-section-head">
           <div class="num">${num}</div>
           <div>
