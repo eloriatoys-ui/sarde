@@ -594,8 +594,6 @@ body::before {
   width: 17px; height: 17px;
   flex-shrink: 0;
 }
-.order-pill.whatsapp svg { color: #25D366; }
-.order-pill.whatsapp:hover svg { color: #25D366; }
 .order-pill.talabat svg { color: #FF5A00; }
 .order-pill.talabat:hover svg { color: #FF5A00; }
 .order-pill.noon svg { color: #FEEE00; filter: drop-shadow(0 0 1px rgba(0,0,0,0.4)); }

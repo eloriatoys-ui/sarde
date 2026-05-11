@@ -5,6 +5,11 @@
 
 const T = {
   en: {
+    'page.home.title': 'Sarde — Syrian & Lebanese Restaurant, Dubai',
+    'page.home.desc': 'Sarde Restaurant — Syrian & Lebanese cuisine in Barsha Heights, Dubai. Charcoal-grilled meats, hand-rolled mezze, slow-burning shisha and timeless Levantine hospitality.',
+    'page.menu.title': 'The Menu — Sarde · Syrian & Lebanese · Dubai',
+    'page.menu.desc': 'The full menu at Sarde Restaurant in Barsha Heights, Dubai — Syrian and Lebanese mezze, charcoal mains, sandwiches, breakfast, desserts, juices, hot drinks and shisha.',
+
     'nav.about': 'About',
     'nav.menu': 'Menu',
     'nav.signatures': 'Signatures',
@@ -12,8 +17,9 @@ const T = {
     'nav.visit': 'Visit',
     'nav.reserve': 'Reserve',
 
-    'ann.text': 'Open daily <b>12:00 PM — 2:00 AM</b> · Barsha Heights, Dubai · Reservations <b>+971 4 554 0528</b> · Charcoal grill since MMXIX · Now serving the new Sarde Crepe ·',
-    'ann.menu': 'Daily <b>12:00 — 02:00</b> · Barsha Heights · Dubai · Reserve <b>+971 4 554 0528</b> · Order on WhatsApp <b>+971 58 569 5404</b> ·',
+    'ann.text': 'Open daily <b>12:00 PM — 2:00 AM</b> · Barsha Heights, Dubai · Reservations <b>+971 50 398 2978</b> · Charcoal grill since MMXIX ·',
+    'ann.menu': 'Daily <b>12:00 — 02:00</b> · Barsha Heights · Dubai · Reserve <b>+971 50 398 2978</b> · Direct <b>+963 945 340 340</b> ·',
+    'marquee.dishes': 'Shish Tawook <span class="dot"></span> Hummus Beiruti <span class="dot"></span> Damascene Kabab <span class="dot"></span> Manakish Za\'atar <span class="dot"></span> Shaqaf Tikka <span class="dot"></span> Aleppo Kebab <span class="dot"></span> Lamb Chops <span class="dot"></span> Kunafa Nabulsiya <span class="dot"></span> Mixed Grill <span class="dot"></span>',
 
     'hero.eyebrow': 'Syrian & Lebanese · Est. MMXIX',
     'hero.h1': 'A Syrian &amp; Lebanese table.<br><em>In the heart of Dubai.</em>',
@@ -37,11 +43,30 @@ const T = {
     'hall.bread': 'Bread from the saj',
     'hall.hours': 'Hours, every day',
     'hall.shisha': 'Shisha blends',
+    'hall.daily': 'Daily',
 
     'sig.kicker': '02 — The House',
     'sig.title': 'Signatures of <em>the kitchen.</em>',
     'sig.tagline': 'Six dishes the regulars<br>come back for.',
-    'sig.cta': 'View the full menu →',
+    'sig.cta': 'View the full menu',
+    'sig.d1.tag': 'Charcoal · Mezze',
+    'sig.d1.title': 'Sarde Mixed Platter',
+    'sig.d1.desc': 'A sharing tray of charcoal-grilled meats, kibbeh, hummus and golden fries.',
+    'sig.d2.tag': 'Mezze',
+    'sig.d2.title': 'Kibbeh Sarde',
+    'sig.d2.desc': 'Our house kibbeh, mounded and crowned with pistachio, mint and tomato.',
+    'sig.d3.tag': 'Sweet',
+    'sig.d3.title': 'Chocolate Cake',
+    'sig.d3.desc': 'Layered chocolate mousse cake dusted with cocoa — pure indulgence.',
+    'sig.d4.tag': 'Sweet',
+    'sig.d4.title': 'Waffle Sarde',
+    'sig.d4.desc': 'Belgian waffle, dark chocolate, fresh strawberries and banana.',
+    'sig.d5.tag': 'Pizza',
+    'sig.d5.title': 'Pepperoni Pizza',
+    'sig.d5.desc': 'Wood-fired with mozzarella, pepperoni and our slow-cooked tomato sauce.',
+    'sig.d6.tag': 'Charcoal · Mains',
+    'sig.d6.title': 'Grilled Chicken Fillet',
+    'sig.d6.desc': 'Charcoal-grilled chicken fillet with seasonal vegetables and creamy garlic sauce.',
     'sig.tag.charcoal': 'Charcoal · Mains',
     'sig.tag.pizza': 'Pizza · Pastries',
     'sig.tag.charcoal2': 'Charcoal',
@@ -67,6 +92,13 @@ const T = {
     'gal.kicker': '03 — The Room',
     'gal.title': 'The <em>scenes</em> of Sarde.',
     'gal.tagline': 'From the saj to the<br>last shisha of the night.',
+    'gal.label.saj': 'From the saj',
+    'gal.label.shisha': 'Shisha · slow burn',
+    'gal.label.room': 'The Room',
+    'gal.label.shawarma': 'Shawarma',
+    'gal.label.charcoal': 'Charcoal · live fire',
+    'gal.label.coffee': 'Moroccan coffee',
+    'gal.label.falafel': 'Falafel · golden',
 
     'visit.kicker': '04 — Visit',
     'visit.title': 'Find your <em>seat.</em>',
@@ -77,10 +109,10 @@ const T = {
     'visit.hours.val': 'Daily<br>12:00 — 02:00',
     'visit.hours.note': 'Kitchen open until last order.',
     'visit.res.lbl': 'Reservations',
-    'visit.wa.lbl': 'WhatsApp & Delivery',
+    'visit.wa.lbl': 'Direct line',
     'visit.follow.lbl': 'Follow',
     'visit.tag.lbl': 'Tag us',
-    'visit.cta.reserve': 'Reserve via WhatsApp',
+    'visit.cta.reserve': 'Reserve',
     'visit.cta.call': 'Call us',
 
     'foot.house': 'The House',
@@ -97,9 +129,9 @@ const T = {
     'menu.meta.vat': 'VAT & service included',
     'menu.meta.veg': 'Vegan & vegetarian on request',
     'menu.cta.title': 'A table is waiting.',
-    'menu.cta.text': 'Reserve directly with the host on WhatsApp — most tables are confirmed within minutes.',
-    'menu.cta.reserve': 'Reserve on WhatsApp',
-    'menu.cta.call': 'Call +971 4 554 0528',
+    'menu.cta.text': 'Call us to reserve — most tables are confirmed within minutes.',
+    'menu.cta.reserve': 'Reserve',
+    'menu.cta.call': 'Call +963 945 340 340',
 
     'tab.breakfast': 'Breakfast',
     'tab.salad': 'Salads',
@@ -155,6 +187,11 @@ const T = {
   },
 
   ar: {
+    'page.home.title': 'سردة — مطعم سوري ولبناني، دبي',
+    'page.home.desc': 'مطعم سردة — مأكولات سورية ولبنانية في برشا هايتس، دبي. لحوم على الفحم، مقبلات مصنوعة يدوياً، شيشة بطيئة الاحتراق، وكرم ضيافة شامي أصيل.',
+    'page.menu.title': 'القائمة — سردة · سوري ولبناني · دبي',
+    'page.menu.desc': 'قائمة مطعم سردة الكاملة في برشا هايتس، دبي — مقبلات شامية، مشاوي على الفحم، سندويشات، فطور، حلويات، عصائر، مشروبات ساخنة وشيشة.',
+
     'nav.about': 'عن المطعم',
     'nav.menu': 'القائمة',
     'nav.signatures': 'الأطباق المميزة',
@@ -162,8 +199,9 @@ const T = {
     'nav.visit': 'زيارتنا',
     'nav.reserve': 'احجز',
 
-    'ann.text': 'مفتوح يومياً <b>١٢:٠٠ ظهراً — ٠٢:٠٠ صباحاً</b> · برشا هايتس، دبي · للحجوزات <b>‎+971 4 554 0528</b> · مشاوي على الفحم منذ ٢٠١٩ ·',
-    'ann.menu': 'يومياً <b>١٢:٠٠ — ٠٢:٠٠</b> · برشا هايتس · دبي · احجز <b>‎+971 4 554 0528</b> · اطلب عبر واتساب <b>‎+971 58 569 5404</b> ·',
+    'ann.text': 'مفتوح يومياً <b>١٢:٠٠ ظهراً — ٠٢:٠٠ صباحاً</b> · برشا هايتس، دبي · للحجوزات <b>‎+971 50 398 2978</b> · مشاوي على الفحم منذ ٢٠١٩ ·',
+    'ann.menu': 'يومياً <b>١٢:٠٠ — ٠٢:٠٠</b> · برشا هايتس · دبي · احجز <b>‎+971 50 398 2978</b> · خط مباشر <b>‎+963 945 340 340</b> ·',
+    'marquee.dishes': 'شيش طاووق <span class="dot"></span> حمص بيروتي <span class="dot"></span> كباب دمشقي <span class="dot"></span> منقوشة زعتر <span class="dot"></span> شقف تكا <span class="dot"></span> كباب حلبي <span class="dot"></span> ريش غنم <span class="dot"></span> كنافة نابلسية <span class="dot"></span> مشاوي مشكلة <span class="dot"></span>',
 
     'hero.eyebrow': 'سوري ولبناني · تأسس ٢٠١٩',
     'hero.h1': 'طاولة سورية ولبنانية.<br><em>في قلب دبي.</em>',
@@ -187,11 +225,30 @@ const T = {
     'hall.bread': 'خبز من الصاج',
     'hall.hours': 'ساعات، كل يوم',
     'hall.shisha': 'نكهات الشيشة',
+    'hall.daily': 'يومياً',
 
     'sig.kicker': '٠٢ — البيت',
     'sig.title': 'أطباق <em>توقيع المطبخ.</em>',
     'sig.tagline': 'ستة أطباق يعود إليها<br>الزبائن دائماً.',
-    'sig.cta': 'القائمة الكاملة ←',
+    'sig.cta': 'القائمة الكاملة',
+    'sig.d1.tag': 'فحم · مقبلات',
+    'sig.d1.title': 'صينية سردة المشكّلة',
+    'sig.d1.desc': 'صينية مشاركة من المشاوي على الفحم، الكبة، الحمص، والبطاطا الذهبية.',
+    'sig.d2.tag': 'مقبلات',
+    'sig.d2.title': 'كبة سردة',
+    'sig.d2.desc': 'كبة البيت، مزيّنة بالفستق الحلبي والنعناع والطماطم.',
+    'sig.d3.tag': 'حلويات',
+    'sig.d3.title': 'كيكة شوكولا',
+    'sig.d3.desc': 'كيكة موس شوكولا بطبقات، مرشوشة بالكاكاو — متعة خالصة.',
+    'sig.d4.tag': 'حلويات',
+    'sig.d4.title': 'وافل سردة',
+    'sig.d4.desc': 'وافل بلجيكي، شوكولا داكنة، فراولة طازجة وموز.',
+    'sig.d5.tag': 'بيتزا',
+    'sig.d5.title': 'بيتزا بيبروني',
+    'sig.d5.desc': 'بيتزا على الحطب مع موزاريلا وبيبروني وصلصة طماطم مطهوّة ببطء.',
+    'sig.d6.tag': 'فحم · أطباق رئيسية',
+    'sig.d6.title': 'صدر دجاج مشوي',
+    'sig.d6.desc': 'صدر دجاج مشوي على الفحم مع خضار موسمية وصلصة الثوم الكريمية.',
     'sig.tag.charcoal': 'فحم · مشاوي',
     'sig.tag.pizza': 'بيتزا · معجنات',
     'sig.tag.charcoal2': 'فحم',
@@ -217,6 +274,13 @@ const T = {
     'gal.kicker': '٠٣ — المكان',
     'gal.title': '<em>مشاهد</em> من سردة.',
     'gal.tagline': 'من الصاج إلى<br>آخر شيشة في الليل.',
+    'gal.label.saj': 'من الصاج',
+    'gal.label.shisha': 'شيشة · جمرٌ هادئ',
+    'gal.label.room': 'الصالة',
+    'gal.label.shawarma': 'شاورما',
+    'gal.label.charcoal': 'فحم · نار حية',
+    'gal.label.coffee': 'قهوة مغربية',
+    'gal.label.falafel': 'فلافل · ذهبية',
 
     'visit.kicker': '٠٤ — زيارتنا',
     'visit.title': 'احجز <em>كرسيك.</em>',
@@ -227,10 +291,10 @@ const T = {
     'visit.hours.val': 'يومياً<br>١٢:٠٠ — ٠٢:٠٠',
     'visit.hours.note': 'المطبخ مفتوح حتى آخر طلب.',
     'visit.res.lbl': 'الحجوزات',
-    'visit.wa.lbl': 'واتساب وتوصيل',
+    'visit.wa.lbl': 'خط مباشر',
     'visit.follow.lbl': 'تابعنا',
     'visit.tag.lbl': 'علِّمنا في صورتك',
-    'visit.cta.reserve': 'احجز عبر واتساب',
+    'visit.cta.reserve': 'احجز',
     'visit.cta.call': 'اتصل بنا',
 
     'foot.house': 'البيت',
@@ -247,9 +311,9 @@ const T = {
     'menu.meta.vat': 'تشمل ضريبة القيمة المضافة والخدمة',
     'menu.meta.veg': 'الخيارات النباتية متاحة عند الطلب',
     'menu.cta.title': 'الطاولة بانتظارك.',
-    'menu.cta.text': 'احجز مباشرة عبر واتساب — معظم الحجوزات تُؤكَّد خلال دقائق.',
-    'menu.cta.reserve': 'احجز عبر واتساب',
-    'menu.cta.call': 'اتصل ‎+971 4 554 0528',
+    'menu.cta.text': 'اتصل بنا للحجز — معظم الحجوزات تُؤكَّد خلال دقائق.',
+    'menu.cta.reserve': 'احجز',
+    'menu.cta.call': 'اتصل ‎+963 945 340 340',
 
     'tab.breakfast': 'الفطور',
     'tab.salad': 'السلطات',
@@ -305,6 +369,11 @@ const T = {
   },
 
   ru: {
+    'page.home.title': 'Sarde — Сирийско-ливанский ресторан, Дубай',
+    'page.home.desc': 'Ресторан Sarde — сирийская и ливанская кухня в Барша Хайтс, Дубай. Мясо на углях, мезе ручной работы, медленный кальян и неспешное левантийское гостеприимство.',
+    'page.menu.title': 'Меню — Sarde · Сирия и Ливан · Дубай',
+    'page.menu.desc': 'Полное меню ресторана Sarde в Барша Хайтс, Дубай — сирийско-ливанские мезе, основные блюда на углях, сэндвичи, завтраки, десерты, соки, горячие напитки и кальян.',
+
     'nav.about': 'О нас',
     'nav.menu': 'Меню',
     'nav.signatures': 'Фирменное',
@@ -312,8 +381,9 @@ const T = {
     'nav.visit': 'Адрес',
     'nav.reserve': 'Бронь',
 
-    'ann.text': 'Открыто ежедневно <b>12:00 — 02:00</b> · Барша Хайтс, Дубай · Бронирование <b>+971 4 554 0528</b> · Угольный гриль с MMXIX · Новый Креп «Сарде» в меню ·',
-    'ann.menu': 'Ежедневно <b>12:00 — 02:00</b> · Барша Хайтс · Дубай · Бронь <b>+971 4 554 0528</b> · Заказ в WhatsApp <b>+971 58 569 5404</b> ·',
+    'ann.text': 'Открыто ежедневно <b>12:00 — 02:00</b> · Барша Хайтс, Дубай · Бронирование <b>+971 50 398 2978</b> · Угольный гриль с MMXIX ·',
+    'ann.menu': 'Ежедневно <b>12:00 — 02:00</b> · Барша Хайтс · Дубай · Бронь <b>+971 50 398 2978</b> · Прямая линия <b>+963 945 340 340</b> ·',
+    'marquee.dishes': 'Шиш-таук <span class="dot"></span> Хумус Бейрути <span class="dot"></span> Дамасский кебаб <span class="dot"></span> Манакиш заатар <span class="dot"></span> Шакаф тикка <span class="dot"></span> Кебаб Алеппо <span class="dot"></span> Бараньи рёбра <span class="dot"></span> Кунафа Наблуси <span class="dot"></span> Ассорти-гриль <span class="dot"></span>',
 
     'hero.eyebrow': 'Сирийская и Ливанская · с MMXIX',
     'hero.h1': 'Сирийско-ливанский стол.<br><em>В сердце Дубая.</em>',
@@ -337,11 +407,30 @@ const T = {
     'hall.bread': 'Хлеб из саджа',
     'hall.hours': 'Часов, каждый день',
     'hall.shisha': 'Миксов кальяна',
+    'hall.daily': 'Каждый день',
 
     'sig.kicker': '02 — Наш дом',
     'sig.title': 'Фирменные <em>блюда кухни.</em>',
     'sig.tagline': 'Шесть блюд, ради которых<br>возвращаются гости.',
-    'sig.cta': 'Полное меню →',
+    'sig.cta': 'Полное меню',
+    'sig.d1.tag': 'Уголь · Мезе',
+    'sig.d1.title': 'Ассорти «Сарде»',
+    'sig.d1.desc': 'Большое блюдо для компании — мясо на углях, киббе, хумус и золотистый картофель.',
+    'sig.d2.tag': 'Мезе',
+    'sig.d2.title': 'Киббе «Сарде»',
+    'sig.d2.desc': 'Фирменное киббе, увенчанное фисташками, мятой и томатами черри.',
+    'sig.d3.tag': 'Десерты',
+    'sig.d3.title': 'Шоколадный торт',
+    'sig.d3.desc': 'Слоёный шоколадный мусс-торт, припорошённый какао — чистое удовольствие.',
+    'sig.d4.tag': 'Десерты',
+    'sig.d4.title': 'Вафля «Сарде»',
+    'sig.d4.desc': 'Бельгийская вафля, тёмный шоколад, свежая клубника и банан.',
+    'sig.d5.tag': 'Пицца',
+    'sig.d5.title': 'Пицца пепперони',
+    'sig.d5.desc': 'На дровах: моцарелла, пепперони и томатный соус медленного приготовления.',
+    'sig.d6.tag': 'Уголь · Основные',
+    'sig.d6.title': 'Куриное филе на гриле',
+    'sig.d6.desc': 'Куриное филе на углях с сезонными овощами и нежным чесночным соусом.',
     'sig.tag.charcoal': 'Угли · Основное',
     'sig.tag.pizza': 'Пицца · Выпечка',
     'sig.tag.charcoal2': 'Угли',
@@ -367,6 +456,13 @@ const T = {
     'gal.kicker': '03 — Зал',
     'gal.title': '<em>Сцены</em> Сарде.',
     'gal.tagline': 'От саджа до<br>последнего кальяна.',
+    'gal.label.saj': 'С саджа',
+    'gal.label.shisha': 'Кальян · медленно',
+    'gal.label.room': 'Зал',
+    'gal.label.shawarma': 'Шаурма',
+    'gal.label.charcoal': 'Уголь · живой огонь',
+    'gal.label.coffee': 'Марокканский кофе',
+    'gal.label.falafel': 'Фалафель · золотой',
 
     'visit.kicker': '04 — Адрес',
     'visit.title': 'Найди своё <em>место.</em>',
@@ -377,10 +473,10 @@ const T = {
     'visit.hours.val': 'Ежедневно<br>12:00 — 02:00',
     'visit.hours.note': 'Кухня работает до последнего заказа.',
     'visit.res.lbl': 'Бронирование',
-    'visit.wa.lbl': 'WhatsApp и доставка',
+    'visit.wa.lbl': 'Прямая линия',
     'visit.follow.lbl': 'Соцсети',
     'visit.tag.lbl': 'Отметь нас',
-    'visit.cta.reserve': 'Бронь в WhatsApp',
+    'visit.cta.reserve': 'Забронировать',
     'visit.cta.call': 'Позвонить',
 
     'foot.house': 'Наш дом',
@@ -397,9 +493,9 @@ const T = {
     'menu.meta.vat': 'НДС и обслуживание включены',
     'menu.meta.veg': 'Веган/вегетар. — по запросу',
     'menu.cta.title': 'Стол ждёт.',
-    'menu.cta.text': 'Бронируйте напрямую с хостом в WhatsApp — обычно подтверждаем за минуты.',
-    'menu.cta.reserve': 'Бронь в WhatsApp',
-    'menu.cta.call': 'Звонок +971 4 554 0528',
+    'menu.cta.text': 'Позвоните, чтобы забронировать — обычно подтверждаем за минуты.',
+    'menu.cta.reserve': 'Забронировать',
+    'menu.cta.call': 'Звонок +963 945 340 340',
 
     'tab.breakfast': 'Завтрак',
     'tab.salad': 'Салаты',
@@ -784,14 +880,14 @@ function detectInitialLang() {
 function applyTranslations(lang) {
   const dict = T[lang] || T.en;
 
-  // Walk all data-i18n elements and replace innerHTML
+  // Walk all data-i18n elements and replace innerHTML (or content for <meta>)
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
-    if (dict[key] !== undefined) {
-      el.innerHTML = dict[key];
-    } else if (T.en[key] !== undefined) {
-      el.innerHTML = T.en[key];
-    }
+    const val = dict[key] !== undefined ? dict[key]
+              : T.en[key] !== undefined ? T.en[key] : null;
+    if (val === null) return;
+    if (el.tagName === 'META') el.setAttribute('content', val);
+    else el.innerHTML = val;
   });
 
   // Translate menu item names — prefer data-name-en/ar/ru attrs (dynamic data),
