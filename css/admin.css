@@ -466,3 +466,23 @@
   .cat-list { max-height: 240px; }
   .form-grid { grid-template-columns: 1fr; }
 }
+
+/* Site credit */
+.admin-credit {
+  position: fixed;
+  bottom: 10px;
+  right: 14px;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(242,234,220,.35);
+  z-index: 5;
+  pointer-events: auto;
+}
+.admin-credit a {
+  color: rgba(213,179,128,.7);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(213,179,128,.3);
+  padding-bottom: 1px;
+}
+.admin-credit a:hover { color: var(--brass-light); }

@@ -1175,6 +1175,20 @@ footer > * { position: relative; z-index: 1; }
   text-transform: uppercase;
   color: rgba(242,234,220,.5);
 }
+.footer-bottom .site-credit {
+  color: rgba(242,234,220,.4);
+}
+.footer-bottom .site-credit a {
+  color: var(--brass-light);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(213,179,128,.35);
+  padding-bottom: 1px;
+  transition: color .2s var(--ease), border-color .2s var(--ease);
+}
+.footer-bottom .site-credit a:hover {
+  color: var(--brass);
+  border-bottom-color: var(--brass);
+}
 
 /* =============================================================
    MENU PAGE
