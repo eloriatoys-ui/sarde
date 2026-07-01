@@ -85,8 +85,13 @@
     const pill = i.badge
       ? `<span class="pill ${i.badge === 'signature' ? 'featured' : ''}" data-pill="${i.badge}">${pillText}</span>`
       : '';
+    // Proxy through images.weserv.nl (free) to serve resized versions.
+    // Supabase's own image transform is disabled on this project.
+    const fast = i.image_url
+      ? `https://images.weserv.nl/?url=${encodeURIComponent(i.image_url)}&w=600&q=75&output=jpg`
+      : '';
     const img = i.image_url
-      ? `<img loading="lazy" src="${esc(i.image_url)}" alt="${esc(i.name_en)}" />`
+      ? `<img loading="lazy" src="${esc(fast)}" alt="${esc(i.name_en)}" />`
       : `<div style="width:100%;height:100%;background:var(--cream-shade);display:grid;place-items:center;color:var(--ink-mute);font-size:11px;letter-spacing:.18em;text-transform:uppercase;">No image</div>`;
 
     return `
