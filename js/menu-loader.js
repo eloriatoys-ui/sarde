@@ -85,12 +85,8 @@
     const pill = i.badge
       ? `<span class="pill ${i.badge === 'signature' ? 'featured' : ''}" data-pill="${i.badge}">${pillText}</span>`
       : '';
-    const fast = (i.image_url || '').replace(
-      '/storage/v1/object/public/',
-      '/storage/v1/render/image/public/'
-    ) + (i.image_url ? (i.image_url.includes('?') ? '&' : '?') + 'width=600&resize=contain&quality=75' : '');
     const img = i.image_url
-      ? `<img loading="lazy" src="${esc(fast)}" alt="${esc(i.name_en)}" />`
+      ? `<img loading="lazy" src="${esc(i.image_url)}" alt="${esc(i.name_en)}" />`
       : `<div style="width:100%;height:100%;background:var(--cream-shade);display:grid;place-items:center;color:var(--ink-mute);font-size:11px;letter-spacing:.18em;text-transform:uppercase;">No image</div>`;
 
     return `
